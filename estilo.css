@@ -275,7 +275,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 75%;}
 }
 
 .skills .skill .htmlcss{
@@ -293,7 +293,7 @@ html{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .wordpress{
