@@ -1,393 +1,532 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="vermas.css" />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Nelson Carrero</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+      <header>
+        <div class="logo">
+          <a href="#">Nelson Carrero</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/pro.jpg" alt="">
-            </div>
-            <h1>Nelson Carrero</h1>
-            <h2>TSU Informatica - Developer Backend</h2>
-            <div class="redes">
-                <a href="https://github.com/Daheid" target="_black"><i class="fa-brands fa-github" ></i></a>
-                <a href="https://www.linkedin.com/in/nelson-carrero-96b984202/" target="_black"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt="" />
         </div>
+        <h1>Nelson Carrero</h1>
+        <h2>Tsu Informatica - Developer Bakend</h2>
+        <div class="redes">
+          <a href="https://github.com/Daheid" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nelson-carrero-96b984202/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nelson Carrero.</span> Programador Backend con conocimientos en frontend, dedicado y siempre aprendiendo sobre nuevas tecnologias para implementarlas en proyectos.</p>
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Nelson Carrero, </span>Programador Backend Junior con
+          experiencia en proyectos propios. Me apasiona el desarrollo eficiente
+          y el aprendizaje constante de nuevas tecnologías. Estoy listo para
+          afrontar nuevos retos y seguir creciendo profesionalmente
+        </p>
 
-        <!-- datos personales -->
-            <div class="fila">
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            11-07-2002
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            +584125256068
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            soynelsond@gmail.com
-                        </li>
-                        <!--
-                        <li>
-                            <strong>Website</strong>
-                            
-                        </li>
-                        -->
-                        <li>
-                            <strong>Dirección</strong>
-                            Aragua, Venezuela
-                        </li>
-                        <!--
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
-                        -->
-                    </ul>
-                </div>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Edad</strong>
+                21
+              </li>
+              <li>
+                <strong>Email</strong>
+                soynelsond@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Venezuela
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Backend</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-code"></i>
-                            <span>TECNOLOGIAS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        </div>
-                        
-                    </div>
-                </div>
+          <!-- intereses -->
+          <div class="col">
+            <h3>Tecnologias</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-js"></i>
+                <span>Javascript</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-node"></i>
+                <span>NodeJs</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-git"></i>
+                <span>GIT</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-gear"></i>
+                <span>APIREST</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-node-js"></i>
+                <span>Express</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>No SQL</span>
+              </div>
             </div>
-            <button>
-                <a href="cv.pdf" style="color:white" target="_blank">Ver CV <i class="fa-solid fa-download"></i></a>
-                <span class="overlay"></span>
-            </button>
+          </div>
         </div>
+        <button>
+          <a href="cv.pdf" style="color: white" target="_blank"
+            >Ver CV <i class="fa-solid fa-download"></i
+          ></a>
+          <span class="overlay"></span>
+        </button>
+      </div>
     </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Skills</h3>
-                    <!-- <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>PHP</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Skills profesionales</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creacion de Proyectos</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+    <!-- SECCION Proyectos -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+          <!---Proyecto 1-->
+          <div class="proyecto" id="proyecto1">
+            <img src="img/aaaa.png" alt="APIREST - Gestor de inventario" />
+            <div class="overlay">
+              <h3>API REST</h3>
+              <p>Gestor de inventario</p>
             </div>
+            <p>
+              Gestor de Inventario con
+              <span style="color: cornflowerblue"
+                >NodeJs, Express y MongoDB</span
+              >
+            </p>
+          </div>
+
+          <!---Proyecto 2-->
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
         </div>
+        <button id="verMasBtn">Ver más</button>
+      </div>
     </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Bachillerato</h4>
-                        <span class="casa">IEA Aragua</span>
-                        <span class="fecha">2015 - 2019</span>
-                        <p>
-                            Egresado como bachiller en ciencias
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>TSU Informatica</h4>
-                        <span class="casa">IUTA</span>
-                        <span class="fecha">2022 - 2024</span>
-                        <p>TSU en informatica</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Programacion Frontend</h4>
-                        <span class="casa">Investigacion</span>
-                        <span class="fecha">2021 - actual</span>
-                        <p>HTML5, css3 y javascript mediante cursos online en diversas paginas web y proyectos realizados que podra encontrar en la siguiente seccion</p>
-                        <div class="conectori"> 
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-
-                    <div class="item izq">
-                        <h4>Programacion Backend</h4>
-                        <span class="casa">Investigacion</span>
-                        <span class="fecha">2021 - actual</span>
-                        <p>PHP y MySQL mediante cursos online y proyectos realizados que podra encontrar en la siguiente seccion</p>
-                        <div class="conectori"> 
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>fullstack y Project manager</h4>
-                        <span class="casa">Traveling Control System</span>
-                        <span class="fecha">2022 - 2022</span>
-                        <p>Desarrollador fullstack en proyecto web para el control de rutas de los autobuses. Desarrollado con las tecnologias: html, css, javascript y php</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Backend Developer</h4>
-                        <span class="casa">Biblioteca Virtual de Aragua</span>
-                        <span class="fecha">2023 - 2023</span>
-                        <p>Desarrollador Backend en proyecto web de servicio comunitario para mejorar y optimizar los tiempos de atencion al cliente. Desarrollado con las tecnologias: html, css, javascript y php</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Desarrollador fullstack y Project manager</h4>
-                        <span class="casa">MangoRifa</span>
-                        <span class="fecha">2024 - 2024</span>
-                        <p>Desarrollador fullstack en proyecto web para la venta de rifas. Desarrollado con las tecnologias: html, css, javascript, Boostrap y php</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Desarrolador fullstack</h4>
-                        <span class="casa">FinaNow</span>
-                        <span class="fecha">2024 - 2024</span>
-                        <p>Desarrollador fullstack en proyecto web para la gestion de finanzas personales. Desarrollado con Las tecnologias: html, css, javascript, Boostrap y php</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>TSU Informatica</h4>
+              <span class="casa">IUTA</span>
+              <span class="fecha">2022 - 2024</span>
+              <p>Graduado en TSU en informatica.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
             </div>
+            <div class="item izq">
+              <h4>Programacion Backend</h4>
+              <span class="casa">Documentacion</span>
+              <span class="fecha">2022 - 2024</span>
+              <p>
+                Estudios en programacion Backend de forma autodidacta y
+                experimentando con proyectos personales.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Ingenieria en computacion</h4>
+              <span class="casa">UNETI</span>
+              <span class="fecha">2024 - Actualmente</span>
+              <p>Actualmente estudiando para ser Ingeniero en computacion.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Backend en php</h4>
+              <span class="casa">Biblioteca Virtual de Aragua </span>
+              <span class="fecha">2023 - 2023</span>
+              <p>
+                Desarrollador Backend con
+                <span style="color: cornflowerblue">PHP navito y MySQL</span> en
+                proyecto web para mejorar y optimizar los tiempos de atencion al
+                cliente en la Biblioteca donde desarrolle una logica de trabajo
+                completa.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Backend en php</h4>
+              <span class="casa">Mangorifas.com</span>
+              <span class="fecha">2024 - 2024</span>
+              <p>
+                Desarrollador backend en proyecto web para la venta de rifas.
+                Desarrollado con las tecnologias:
+                <span style="color: cornflowerblue"
+                  >javascript, php, MySQL y JSON</span
+                >
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Backend Developer</h4>
+              <span class="casa">FinanNow</span>
+              <span class="fecha">2024 - 2024</span>
+              <p>
+                Desarrollador fullstack en proyecto web para la gestion de
+                finanzas personales. Desarrollado con tecnologias como
+                <span style="color: cornflowerblue"
+                  >Nodejs, Expressjs, MongoDB,IndexeDB y PWA.</span
+                >
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <a href="https://tesis-nc.000webhostapp.com/index.html" style="color:white" target="_blank">
-                    <img src="img/Diseño sin título (1).png" alt="">
-                    <div class="overlay">
-                        <h3>FinanNow</h3>
-                        <p>Web para la gestion de finanzas personales</p>
-                    </div>
-                    </a>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Habilidades Tecnicas</h3>
+            <div class="skill">
+              <span>Docker</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
                 </div>
-                <div class="proyecto">
-                    <a href="https://mangorifa.com/index.php" style="color:white" target="_blank">
-                    <img src="img/Diseño sin título (2).png" alt="">
-                    <div class="overlay">
-                        <h3>MangoRifa</h3>
-                        <p>Web de Ventas de rifas</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/Diseño sin título (4).png" alt="">
-                    <div class="overlay">
-                        <h3>Traveling Control System</h3>
-                        <p>Web de control de rutas</p>
-                    </div>
-                </div>
-                <!-- <div class="proyecto">
-                    <a href="https://tesis-nc.000webhostapp.com" style="color:white" target="_blank">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>FinaNow</h3>
-                        <p>Web de gestion de finanzas personales</p>
-                    </div>
-                </div> -->
-                
+              </div>
             </div>
+            <div class="skill">
+              <span>PWA</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>MVC</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Testing</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Habilidades Blandas</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Resolucion de Poroblemas</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <form action="https://formsubmit.co/hecson2002@gmail.com" method="POST">
-                        <input type="text" placeholder="Su Nombre" name="nombre" required>
-                        <input type="text" placeholder="Número telefónico" name="telefono" required>
-                        <input type="text" placeholder="Dirección de correo" name="email" required>
-                        <input type="text" placeholder="Tema" name="tema" required>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" name="mensaje" required></textarea>
-                        <input type="hidden" name="_template" value="table">
-                       <input type="hidden" name="_next" value="https://daheid.github.io/Portafolio/">
-                        <input type="hidden" name="_captcha" value="false">
-                        <button type="submit">
-                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
-
-                    </form>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Aragua, Venezuela
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: soynelsond@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form
+              action="https://formsubmit.co/soynelsond@gmail.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                placeholder="Su Nombre"
+                name="nombre"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Número telefónico"
+                name="telefono"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Dirección de correo"
+                name="email"
+                required
+              />
+              <input type="text" placeholder="Tema" name="tema" required />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+                name="mensaje"
+                required
+              ></textarea>
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://daheid.github.io/Portafolio/"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <button type="submit">
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Aragua, Venezuela
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: soynelsond@gmail.com
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://github.com/Daheid" target="_black"><i class="fa-brands fa-github" ></i></a>
-            <a href="https://www.linkedin.com/in/nelson-carrero-96b984202/" target="_black"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/nelson-carrero-96b984202/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/Daheid" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
     </footer>
 
+    <!---MODAL DE Proyectos -->
+    <!-- Modal Proyecto 1-->
+    <div id="modal-proyecto1" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modal-proyecto1">&times;</span>
+
+        <!-- Contenedor del título y enlace de GitHub -->
+        <div class="header-modal">
+          <a
+            href="https://github.com/usuario/proyecto1"
+            target="_blank"
+            class="btn-icon"
+          >
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </a>
+          <h2>Diseño Creativo 1</h2>
+        </div>
+
+        <!-- Enlace a la documentación debajo del título -->
+        <div class="doc-link">
+          <a
+            href="https://gestor-de-inventario.onrender.com/documentacion/"
+            target="_blank"
+            class="btn-doc"
+          >
+            <i class="fas fa-book"></i> Documentacion swagger
+          </a>
+        </div>
+
+        <p>Descripción del proyecto 1.</p>
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <!----SCRIPTS-->
     <script src="script.js"></script>
-</body>
+    <script src="vermas.js"></script>
+    <script src="modal.js"></script>
+  </body>
 </html>

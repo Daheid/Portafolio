@@ -275,7 +275,6 @@ html {
   width: 0%;
   animation: 2s javascript forwards;
 }
-
 @keyframes javascript {
   0% {
     width: 0%;
@@ -294,7 +293,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 80%;
   }
 }
 
@@ -307,7 +306,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 99%;
+    width: 85%;
   }
 }
 
@@ -320,7 +319,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 65%;
   }
 }
 
@@ -346,7 +345,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -359,7 +358,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 99%;
+    width: 80%;
   }
 }
 
@@ -372,7 +371,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 99%;
+    width: 100%;
   }
 }
 
@@ -385,7 +384,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 94%;
+    width: 65%;
   }
 }
 
@@ -633,7 +632,7 @@ html {
   top: 40%;
   background-color: #252a2e;
   padding: 20px;
-  max-width: 350px;
+  max-swidth: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -644,7 +643,7 @@ html {
   margin-bottom: 20px;
 }
 .contacto .col .info ul li i {
-  color: #1cb698;
+  color: #2c69eb;
   display: inline-block;
   margin-right: 20px;
 }
