@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="estilo.css" />
     <link rel="stylesheet" href="vermas.css" />
     <link rel="stylesheet" href="modal.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!-- MENU ENCABEZADO -->
@@ -159,10 +160,11 @@
               <p>Gestor de inventario</p>
             </div>
             <p>
-              Gestor de Inventario con
+              Gestor de Inventario creado con
               <span style="color: cornflowerblue"
                 >NodeJs, Express y MongoDB</span
               >
+              click para leer mas...
             </p>
           </div>
 
@@ -407,10 +409,7 @@
         <div class="fila">
           <!-- Formulario -->
           <div class="col">
-            <form
-              action="https://formsubmit.co/soynelsond@gmail.com"
-              method="POST"
-            >
+            <form id="contactForm">
               <input
                 type="text"
                 placeholder="Su Nombre"
@@ -431,21 +430,12 @@
               />
               <input type="text" placeholder="Tema" name="tema" required />
               <textarea
-                name=""
-                id=""
+                name="mensaje"
                 cols="30"
                 rows="10"
                 placeholder="Mensaje"
-                name="mensaje"
                 required
               ></textarea>
-              <input type="hidden" name="_template" value="table" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://daheid.github.io/Portafolio/"
-              />
-              <input type="hidden" name="_captcha" value="false" />
               <button type="submit">
                 Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                 <span class="overlay"></span>
@@ -528,5 +518,6 @@
     <script src="script.js"></script>
     <script src="vermas.js"></script>
     <script src="modal.js"></script>
+    <script src="correo.js"></script>
   </body>
 </html>
