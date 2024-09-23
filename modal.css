@@ -1,102 +1,148 @@
-/* Estilos del modal */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
 .modal {
-  display: none; /* Oculto por defecto */
+  display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  overflow: auto; /* Permitir desplazamiento en dispositivos pequeños */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
   background-color: white;
-  margin: 10% auto; /* Ajustar margen superior e inferior para mayor visibilidad */
+  margin: 20% auto; /* Cambiado para que aparezca más abajo */
   padding: 20px;
-  width: 90%;
+  border-radius: 10px;
+  width: 90%; /* Cambiado a 90% para mayor responsividad */
   max-width: 600px;
-  border-radius: 8px;
-  text-align: center;
-  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Añadido sombra para mejor visualización */
 }
 
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; /* Centra el título */
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between; /* GitHub a la izquierda y Swagger a la derecha */
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #555;
+  flex: 1; /* Permite que los enlaces ocupen espacio igual */
+  text-align: center; /* Centra el texto dentro del flex item */
+}
+
+.link:hover {
+  color: #007bff;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.download {
+  text-align: center; /* Centra el botón de descarga */
+  margin-bottom: 20px; /* Añade un margen inferior */
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón cerrar */
 .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* Contenedor para el título y el enlace de GitHub */
-.header-modal {
-  display: flex;
-  flex-direction: column; /* Cambiar a columna para mejorar el diseño en móviles */
-  align-items: center;
-  position: relative;
-}
-
-.header-modal h2 {
-  margin: 10px 0; /* Ajustar el margen superior e inferior */
-}
-
-.header-modal .btn-icon {
-  position: absolute;
-  left: 0; /* Alinear GitHub a la izquierda */
-  top: 10px; /* Alineación vertical con el título */
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-.header-modal .btn-icon i {
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-  font-size: 24px;
-}
-
-/* Estilos del enlace a la documentación */
-.doc-link {
-  margin-top: 20px; /* Espacio entre el título y la documentación */
-}
-
-.btn-doc {
-  text-decoration: none;
-  font-size: 18px;
+.close:hover,
+.close:focus {
   color: black;
 }
 
-.btn-doc i {
-  margin-right: 5px;
-  font-size: 20px;
-}
-
-.btn-icon:hover,
-.btn-doc:hover {
-  color: #007bff; /* Cambiar color al hacer hover */
-}
-
-/* Media queries para dispositivos pequeños */
+/* Media Queries para pantallas más pequeñas */
 @media (max-width: 600px) {
   .modal-content {
-    width: 95%; /* Ajustar el ancho para dispositivos móviles */
-    margin: 10% auto; /* Reducir el margen para dispositivos pequeños */
+    margin: 30% 5%; /* Aumenta el margen superior en pantallas pequeñas */
+    padding: 15px; /* Reduce el padding en pantallas pequeñas */
   }
 
-  .close {
-    font-size: 24px; /* Reducir tamaño del ícono de cerrar */
-    top: 5px; /* Ajustar la posición del ícono */
-    right: 5px; /* Ajustar la posición del ícono */
+  .modal-title {
+    font-size: 20px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
   }
 
-  .header-modal .btn-icon {
-    font-size: 16px; /* Reducir tamaño del ícono en dispositivos pequeños */
-    top: 5px; /* Ajustar la posición en dispositivos pequeños */
+  .description {
+    font-size: 12px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
   }
 
-  .btn-doc {
-    font-size: 16px; /* Reducir tamaño del texto del enlace de documentación */
+  .download-btn {
+    padding: 8px 16px; /* Reduce el padding del botón en pantallas pequeñas */
+  }
+
+  .links {
+    flex-direction: column; /* Coloca los enlaces uno encima del otro en pantallas pequeñas */
+    align-items: center; /* Centra los enlaces */
+  }
+
+  .link {
+    text-align: center; /* Asegura que los enlaces se centren en pantallas pequeñas */
+    margin: 5px 0; /* Añade margen vertical entre los enlaces */
   }
 }

@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "43c6c9c2-c63f-4120-9011-abf10c123c20",
+		"name": "entorno de produccion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36959017"
+	},
+	"item": [
+		{
+			"name": "productos",
+			"item": [
+				{
+					"name": "obtener todos los productos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTI3NjY0YzQ0ZmIyNmJlZDZkODA4OSIsImlhdCI6MTcyNDE3NzYzNSwiZXhwIjoxNzI0MjY0MDM1fQ.qz8AkW_k_W2ib7kXTtDiEFxhm2neXi3VhKRMLGEsTo0",
+								"description": "token de autenticacion",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/productos",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar producto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTI3NjY0YzQ0ZmIyNmJlZDZkODA4OSIsImlhdCI6MTcyMjk3NTEyMiwiZXhwIjoxNzIzMDYxNTIyfQ.jaNwjqHAao8qYrXDqr4DDCSBO8eQA956gxTXHTdGSHY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"camiseta no basica\",\r\n    \"precio\": 23,\r\n    \"cantidad\": 34,\r\n    \"descripcion\": \"camiseta de no se que\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/productos/66ad0034bd3e7209450b9a82",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos",
+								"66ad0034bd3e7209450b9a82"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar producto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTI3NjY0YzQ0ZmIyNmJlZDZkODA4OSIsImlhdCI6MTcyMjk3NTEyMiwiZXhwIjoxNzIzMDYxNTIyfQ.jaNwjqHAao8qYrXDqr4DDCSBO8eQA956gxTXHTdGSHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/productos/66ad0034bd3e7209450b9a82",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos",
+								"66ad0034bd3e7209450b9a82"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar varios productos",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTI3NjY0YzQ0ZmIyNmJlZDZkODA4OSIsImlhdCI6MTcyNDE3NzYzNSwiZXhwIjoxNzI0MjY0MDM1fQ.qz8AkW_k_W2ib7kXTtDiEFxhm2neXi3VhKRMLGEsTo0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"id\": \"66ad0034bd3e7209450b9a83\"\r\n}]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/productos",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear producto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTMzMGVjOTQwZjBhNmM1MWYwMWIwMiIsImlhdCI6MTcyNzExMTEzNiwiZXhwIjoxNzI3MTk3NTM2fQ.F_CKemnblF9uUc3eFbG-aOpjTw7IvGaD1NsYO4I5EB4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"poderoso\",\r\n    \"precio\": 11,\r\n    \"cantidad\": 21,\r\n    \"descripcion\": \"control\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/productos",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "iniciar sesion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"correo\": \"a@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/auth/login",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTMzMGVjOTQwZjBhNmM1MWYwMWIwMiIsImlhdCI6MTcyNjE2NjM3NywiZXhwIjoxNzI2MjUyNzc3fQ.xRjPSO8scKOS-GvKF0mjiLQH54SO1RVVfzxoWLgwBmI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Daheid\",\r\n    \"correo\": \"Daheid@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"66e327ea6790b338ad6eca60\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gestor-de-inventario.onrender.com/api/v1/auth/usuarios",
+							"protocol": "https",
+							"host": [
+								"gestor-de-inventario",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

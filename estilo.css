@@ -512,33 +512,37 @@ html {
   color: #fff;
   padding: 50px 20px;
 }
-.portfolio .contenido-seccion {
+.contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
 .portfolio h2 {
   font-size: 48px;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   text-align: center;
   padding: 20px 0;
 }
-.portfolio .galeria {
+.galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.portfolio .galeria .proyecto {
+.proyecto {
   position: relative;
   max-width: 340px;
   height: fit-content;
   margin: 10px;
   cursor: pointer;
+  background-color: #2d3238;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.portfolio .galeria .proyecto img {
+.proyecto img {
   width: 100%;
   display: block;
 }
-.portfolio .galeria .proyecto .overlay {
+.proyecto .overlay {
   position: absolute;
   top: 0;
   width: 100%;
@@ -553,15 +557,45 @@ html {
   letter-spacing: 3px;
   opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3 {
+.proyecto .overlay h3 {
   margin-bottom: 20px;
   transition: 1s;
 }
-.portfolio .galeria .proyecto .overlay:hover {
+.proyecto:hover .overlay {
   opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3 {
+.proyecto:hover .overlay h3 {
   margin-bottom: 0px;
+}
+.proyecto .contenido {
+  padding: 15px;
+}
+.proyecto .contenido p {
+  margin: 0;
+  font-size: 14px;
+}
+.proyecto .contenido .tecnologias {
+  color: cornflowerblue;
+}
+.proyecto .contenido .leer-mas {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+#verMasBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #1cb698;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#verMasBtn:hover {
+  background-color: #159a80;
 }
 /* SECCION CONTACTO */
 .contacto {

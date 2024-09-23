@@ -153,76 +153,58 @@
         <h2>Proyectos</h2>
         <div class="galeria">
           <!---Proyecto 1-->
-          <div class="proyecto" id="proyecto1">
+          <div class="proyecto" id="openModalBtn">
             <img src="img/aaaa.png" alt="APIREST - Gestor de inventario" />
             <div class="overlay">
               <h3>API REST</h3>
               <p>Gestor de inventario</p>
             </div>
-            <p>
-              Gestor de Inventario creado con
-              <span style="color: cornflowerblue"
-                >NodeJs, Express y MongoDB</span
-              >
-              click para leer mas...
-            </p>
+            <div class="contenido">
+              <p>
+                Gestor de Inventario creado con
+                <span class="tecnologias">NodeJs, Express y MongoDB</span>
+              </p>
+              <span class="leer-mas">click para leer más...</span>
+            </div>
           </div>
 
           <!---Proyecto 2-->
           <div class="proyecto">
-            <img src="img/p2.jpg" alt="" />
+            <img src="img/p2.jpg" alt="Task Traker" />
+            <div class="overlay">
+              <h3>Task Traker</h3>
+              <p>Web completa</p>
+            </div>
+            <div class="contenido">
+              <p>Proximamente ...</p>
+              <span class="leer-mas">click para leer más...</span>
+            </div>
+          </div>
+
+          <!-- Repite la estructura para los proyectos 3-9 -->
+          <!-- Ejemplo para el Proyecto 3 -->
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="Mango Rifas" />
+            <div class="overlay">
+              <h3>Mango Rifas Demo</h3>
+              <p>Web completa</p>
+            </div>
+            <div class="contenido">
+              <p>Proximamente ...</p>
+              <span class="leer-mas">click para leer más...</span>
+            </div>
+          </div>
+
+          <!-- Añade los proyectos 4-9 siguiendo la misma estructura -->
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="Diseño Creativo - Fotografía" />
             <div class="overlay">
               <h3>Diseño Creativo</h3>
               <p>Fotografía</p>
             </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p3.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p4.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p5.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p6.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p4.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p5.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p6.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
+            <div class="contenido">
+              <p>Descripción breve del proyecto de fotografía</p>
+              <span class="leer-mas">click para leer más...</span>
             </div>
           </div>
         </div>
@@ -481,36 +463,48 @@
 
     <!---MODAL DE Proyectos -->
     <!-- Modal Proyecto 1-->
-    <div id="modal-proyecto1" class="modal">
+    <div id="modal" class="modal">
       <div class="modal-content">
-        <span class="close" data-modal="modal-proyecto1">&times;</span>
-
-        <!-- Contenedor del título y enlace de GitHub -->
-        <div class="header-modal">
-          <a
-            href="https://github.com/usuario/proyecto1"
-            target="_blank"
-            class="btn-icon"
-          >
-            <i class="fab fa-github"></i>
-            <p>GitHub</p>
-          </a>
-          <h2>Diseño Creativo 1</h2>
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2 class="modal-title">Gestor de inventario</h2>
+        <div class="modal-body">
+          <div class="links">
+            <a
+              href="https://github.com/Daheid/RestAPI-Gestor-de-inventario"
+              target="_blank"
+              class="link"
+              ><i class="fab fa-github"></i>GitHub</a
+            >
+            <a
+              href="proyecto1/entorno de produccion.postman_collection.json"
+              download="entorno_postman.json"
+              class="link"
+              ><i class="fas fa-book"></i> Archivos Postman</a
+            >
+          </div>
+          <h3 class="description">
+            ⚠El proyecto se encuentra alojado en Vercel gratuito lo cual puede
+            que tarde en cargar la documentacion la primera vez⚠.
+          </h3>
+          <p class="description">
+            La siguente API fue creada con: <br />
+            - Validación de JsonWebToken. <br />
+            - Categoría de roles. <br />
+            - Mongoose para el manejo de MongoDB. <br />
+            - Swagger para la documentación. <br />
+            - Bcrypt para encriptación. <br />
+            - Postman para probar la API. <br />
+          </p>
+          <div class="download">
+            <a
+              href="https://gestor-de-inventario.onrender.com/documentacion/"
+              target="_blank"
+              class="download-btn"
+            >
+              Ver documentación
+            </a>
+          </div>
         </div>
-
-        <!-- Enlace a la documentación debajo del título -->
-        <div class="doc-link">
-          <a
-            href="https://gestor-de-inventario.onrender.com/documentacion/"
-            target="_blank"
-            class="btn-doc"
-          >
-            <i class="fas fa-book"></i> Documentacion swagger
-          </a>
-        </div>
-
-        <p>Descripción del proyecto 1.</p>
-        <img src="" alt="" />
       </div>
     </div>
 
