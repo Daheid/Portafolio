@@ -16,3 +16,22 @@ window.onclick = function (event) {
     modal.style.display = "none"
   }
 }
+
+// Abrir y cerrar el modal
+const modal2 = document.getElementById("modal2")
+const openModalBtn2 = document.getElementById("openModalBtn2")
+const closeModalBtn2 = document.getElementById("closeModalBtn2")
+
+openModalBtn2.onclick = function () {
+  modal2.style.display = "block"
+}
+
+closeModalBtn2.onclick = function () {
+  modal2.style.display = "none"
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal2.style.display = "none"
+  }
+}
