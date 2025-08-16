@@ -1,32 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const proyectos = document.querySelectorAll(".proyecto")
+  const proyectos = document.querySelectorAll(".proyecto-card")
   const verMasBtn = document.getElementById("verMasBtn")
   let elementosMostrados = 3
 
-  // Mostrar los primeros 3 elementos al cargar la página
-  for (let i = 0; i < elementosMostrados; i++) {
-    if (proyectos[i]) {
-      proyectos[i].classList.add("mostrar")
-    }
+  // Función para inicializar la visualización
+  function inicializarProyectos() {
+    proyectos.forEach((proyecto, index) => {
+      if (index < elementosMostrados) {
+        proyecto.classList.add("mostrar")
+      } else {
+        proyecto.classList.remove("mostrar")
+      }
+    })
+
+    // Ocultar botón si no hay más proyectos por mostrar
+    verMasBtn.style.display =
+      elementosMostrados >= proyectos.length ? "none" : "block"
   }
+
+  // Inicializar al cargar la página
+  inicializarProyectos()
 
   // Al hacer clic en "Ver más"
   verMasBtn.addEventListener("click", function () {
-    let nuevosElementos = 0
+    elementosMostrados += 3
 
-    // Mostrar 3 elementos más
-    for (let i = elementosMostrados; i < elementosMostrados + 3; i++) {
-      if (proyectos[i]) {
-        proyectos[i].classList.add("mostrar")
-        nuevosElementos++
-      }
-    }
-
-    elementosMostrados += nuevosElementos
-
-    // Si ya no hay más elementos por mostrar, ocultar el botón
-    if (elementosMostrados >= proyectos.length) {
-      verMasBtn.style.display = "none"
-    }
+    // Mostrar los siguientes proyectos
+    inicializarProyectos()
   })
 })

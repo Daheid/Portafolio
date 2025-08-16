@@ -33,7 +33,7 @@
             <li>
               <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
             </li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <!-- <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li> -->
             <!---<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>--->
           </ul>
         </nav>
@@ -60,6 +60,11 @@
             target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=584125256068"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
         </div>
       </div>
     </section>
@@ -69,10 +74,10 @@
       <div class="contenido-seccion">
         <h2>Sobre Mí</h2>
         <p>
-          <span>Hola, soy Nelson Carrero, </span>Programador Backend Junior con
-          experiencia en proyectos propios. Me apasiona el desarrollo eficiente
-          y el aprendizaje constante de nuevas tecnologías. Estoy listo para
-          afrontar nuevos retos y seguir creciendo profesionalmente
+          <span>Programador Backend </span>con experiencia en proyectos
+          Empresariales y Freelancers. Me apasiona el desarrollo eficiente y el
+          aprendizaje constante de nuevas tecnologías. Estoy listo para afrontar
+          nuevos retos y seguir creciendo profesionalmente.
         </p>
 
         <div class="fila">
@@ -81,51 +86,43 @@
             <h3>Datos Personales</h3>
             <ul>
               <li>
-                <strong>Edad</strong>
-                21
-              </li>
-              <li>
                 <strong>Email</strong>
                 soynelsond@gmail.com
               </li>
               <li>
-                <strong>Dirección</strong>
-                Venezuela
-              </li>
-              <li>
                 <strong>Cargo</strong>
-                <span>Backend</span>
+                <span>Backend Development</span>
               </li>
             </ul>
           </div>
 
-          <!-- intereses -->
+          <!-- tecnologias -->
           <div class="col">
             <h3>Tecnologias</h3>
             <div class="contenedor-intereses">
               <div class="interes">
-                <i class="fa-brands fa-php"></i>
-                <span>PHP</span>
+                <i class="fa-brands fa-laravel"></i>
+                <span>Laravel</span>
               </div>
               <div class="interes">
-                <i class="fa-brands fa-js"></i>
-                <span>Javascript</span>
+                <i class="fa-brands fa-node-js"></i>
+                <span>ExpressJs</span>
               </div>
               <div class="interes">
                 <i class="fa-brands fa-node"></i>
                 <span>NodeJs</span>
               </div>
               <div class="interes">
-                <i class="fa-brands fa-git"></i>
-                <span>GIT</span>
+                <i class="fa-brands fa-python"></i>
+                <span>DJango</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-gear"></i>
                 <span>APIREST</span>
               </div>
               <div class="interes">
-                <i class="fa-brands fa-node-js"></i>
-                <span>Express</span>
+                <i class="fa-brands fa-git"></i>
+                <span>GIT</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-database"></i>
@@ -153,63 +150,142 @@
         <h2>Proyectos</h2>
         <div class="galeria">
           <!---Proyecto 1-->
-          <div class="proyecto" id="openModalBtn">
-            <img src="img/aaaa.png" alt="APIREST - Gestor de inventario" />
-            <div class="overlay">
-              <h3>Gestor de inventario</h3>
-              <p>API - Rest</p>
+          <div class="proyecto-card" id="openModalBtn2">
+            <div class="image-container">
+              <img
+                src="img/aaaa.png"
+                alt="APIREST - Gestor de inventario"
+                class="project-image"
+              />
             </div>
-            <div class="contenido">
-              <p>
+            <div class="project-content">
+              <h3 class="project-title">Gestor de inventario</h3>
+              <p class="project-subtitle">API - Rest</p>
+              <p class="project-description">
                 Gestor de Inventario creado con
-                <span class="tecnologias">NodeJs, Express y MongoDB</span>
+                <span class="tech-tags">NodeJs, Express y MongoDB</span>
               </p>
-              <span class="leer-mas">click para leer más...</span>
+              <div class="project-actions">
+                <button class="action-btn demo-btn">Demo</button>
+                <button class="action-btn docs-btn">Documentación</button>
+              </div>
             </div>
           </div>
-
           <!---Proyecto 2-->
-          <div class="proyecto" id="openModalBtn2">
-            <img src="img/p2.jpg" alt="Task Traker" />
-            <div class="overlay">
-              <h3>Task Traker</h3>
-              <p>API - Rest</p>
+          <div class="proyecto-card" id="openModalBtn2">
+            <div class="image-container">
+              <img
+                src="img/aaaa.png"
+                alt="APIREST - Gestor de inventario"
+                class="project-image"
+              />
             </div>
-            <div class="contenido">
-              <p>
-                TO-DO creado con
-                <span class="tecnologias">Laravel, SQLite</span>
+            <div class="project-content">
+              <h3 class="project-title">Gestor de inventario</h3>
+              <p class="project-subtitle">API - Rest</p>
+              <p class="project-description">
+                Gestor de Inventario creado con
+                <span class="tech-tags">NodeJs, Express y MongoDB</span>
               </p>
-              <span class="leer-mas">Proximamente ...</span>
+              <div class="project-actions">
+                <button class="action-btn demo-btn">Demo</button>
+                <button class="action-btn docs-btn">Documentación</button>
+              </div>
+            </div>
+          </div>
+          <!--  Proyecto 3 -->
+          <div class="proyecto-card" id="openModalBtn2">
+            <div class="image-container">
+              <img
+                src="img/aaaa.png"
+                alt="APIREST - Gestor de inventario"
+                class="project-image"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Gestor de inventario</h3>
+              <p class="project-subtitle">API - Rest</p>
+              <p class="project-description">
+                Gestor de Inventario creado con
+                <span class="tech-tags">NodeJs, Express y MongoDB</span>
+              </p>
+              <div class="project-actions">
+                <button class="action-btn demo-btn">Demo</button>
+                <button class="action-btn docs-btn">Documentación</button>
+              </div>
             </div>
           </div>
 
-          <!-- Repite la estructura para los proyectos 3-9 -->
-          <!-- Ejemplo para el Proyecto 3 -->
-          <div class="proyecto" id="openModalBtn3">
-            <img src="img/p3.jpg" alt="Mango Rifas" />
-            <div class="overlay">
-              <h3>Mango Rifas</h3>
-              <p>Api - Rest</p>
+          <!-- proyecto 4 -->
+          <div class="proyecto-card" id="openModalBtn2">
+            <div class="image-container">
+              <img
+                src="img/aaaa.png"
+                alt="APIREST - Gestor de inventario"
+                class="project-image"
+              />
             </div>
-            <div class="contenido">
-              <p>Proximamente ...</p>
-              <span class="leer-mas">click para leer más...</span>
+            <div class="project-content">
+              <h3 class="project-title">Gestor de inventario</h3>
+              <p class="project-subtitle">API - Rest</p>
+              <p class="project-description">
+                Gestor de Inventario creado con
+                <span class="tech-tags">NodeJs, Express y MongoDB</span>
+              </p>
+              <div class="project-actions">
+                <button class="action-btn demo-btn">Demo</button>
+                <button class="action-btn docs-btn">Documentación</button>
+              </div>
             </div>
           </div>
 
-          <!-- Añade los proyectos 4-9 siguiendo la misma estructura -->
-          <div class="proyecto">
-            <img src="img/p3.jpg" alt="Diseño Creativo - Fotografía" />
-            <div class="overlay">
-              <h3>FinanNow</h3>
-              <p>PWA</p>
+          <!-- proyecto 5 -->
+          <div class="proyecto-card" id="openModalBtn2">
+            <div class="image-container">
+              <img
+                src="img/aaaa.png"
+                alt="APIREST - Gestor de inventario"
+                class="project-image"
+              />
             </div>
-            <div class="contenido">
-              <p>Proximamente ...</p>
-              <span class="leer-mas">click para leer más...</span>
+            <div class="project-content">
+              <h3 class="project-title">Gestor de inventario</h3>
+              <p class="project-subtitle">API - Rest</p>
+              <p class="project-description">
+                Gestor de Inventario creado con
+                <span class="tech-tags">NodeJs, Express y MongoDB</span>
+              </p>
+              <div class="project-actions">
+                <button class="action-btn demo-btn">Demo</button>
+                <button class="action-btn docs-btn">Documentación</button>
+              </div>
             </div>
           </div>
+
+          <!-- proyecto 6 -->
+          <div class="proyecto-card" id="openModalBtn2">
+            <div class="image-container">
+              <img
+                src="img/aaaa.png"
+                alt="APIREST - Gestor de inventario"
+                class="project-image"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Gestor de inventario</h3>
+              <p class="project-subtitle">API - Rest</p>
+              <p class="project-description">
+                Gestor de Inventario creado con
+                <span class="tech-tags">NodeJs, Express y MongoDB</span>
+              </p>
+              <div class="project-actions">
+                <button class="action-btn demo-btn">Demo</button>
+                <button class="action-btn docs-btn">Documentación</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin de los Proyecto  -->
         </div>
         <button id="verMasBtn">Ver más</button>
       </div>
@@ -225,7 +301,6 @@
             <div class="item izq">
               <h4>TSU Informatica</h4>
               <span class="casa">IUTA</span>
-              <span class="fecha">2022 - 2024</span>
               <p>Graduado en TSU en informatica.</p>
               <div class="conectori">
                 <div class="circuloi"></div>
@@ -234,7 +309,6 @@
             <div class="item izq">
               <h4>Programacion Backend</h4>
               <span class="casa">Documentacion</span>
-              <span class="fecha">2022 - 2024</span>
               <p>
                 Estudios en programacion Backend de forma autodidacta y
                 experimentando con proyectos personales.
@@ -244,10 +318,9 @@
               </div>
             </div>
             <div class="item izq">
-              <h4>Ingenieria en computacion</h4>
+              <h4>Ingenieria en Sistemas</h4>
               <span class="casa">UNA - Universidad Nacional Abierta </span>
-              <span class="fecha">2024 - Actualmente</span>
-              <p>Actualmente estudiando Ingenieria en Sistemas.</p>
+              <p>Actualmente cursando Ingenieria en Sistemas.</p>
               <div class="conectori">
                 <div class="circuloi"></div>
               </div>
@@ -256,149 +329,77 @@
 
           <div class="col derecha">
             <h3>Experiencia de trabajo</h3>
+            <!---Experiencia 1-->
             <div class="item der">
               <h4>Backend en PHP</h4>
               <span class="casa">Biblioteca Virtual de Aragua </span>
-              <span class="fecha">2023 - 2023</span>
               <p>
                 Desarrollador Backend con
-                <span style="color: cornflowerblue">PHP navito y MySQL</span> en
+                <span style="color: cornflowerblue">PHP nativo y MySQL</span> en
                 proyecto web para mejorar y optimizar los tiempos de atencion al
-                cliente en la Biblioteca donde desarrolle una logica de trabajo
+                cliente en la Biblioteca Con algoritmos de logica de trabajo
                 completa.
               </p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
             </div>
+
+            <!---Experiencia 2-->
             <div class="item der">
               <h4>Backend en Laravel</h4>
-              <span class="casa">Mangorifas.com</span>
-              <span class="fecha">2024 - 2024</span>
+              <span class="casa">Mangorifas</span>
               <p>
-                Desarrollador backend en proyecto web para la venta de rifas.
+                Desarrollador backend en proyecto para la venta de rifas.
                 Desarrollado con las tecnologias:
                 <span style="color: cornflowerblue"
-                  >javascript, php, Laravel, MySQL y JSON</span
+                  >javascript, Laravel, MongoDB</span
                 >
               </p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
             </div>
-            <div class="item der">
-              <h4>Backend en NodeJS</h4>
-              <span class="casa">FinanNow</span>
-              <span class="fecha">2024 - 2024</span>
-              <p>
-                Desarrollador fullstack en proyecto web para la gestion de
-                finanzas personales. Desarrollado con tecnologias como
-                <span style="color: cornflowerblue"
-                  >Nodejs, Expressjs, MongoDB,IndexeDB y PWA.</span
-                >
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
+
+            <!---Experiencia 3-->
             <div class="item der">
               <h4>Backend en Laravel</h4>
               <span class="casa">INTEC C.A</span>
-              <span class="fecha">2024 - 2025</span>
               <p>
                 Desarrollador Backend en proyecto para la gestion de procesos
                 internos de la empresa. Desarrollado con tecnologias como
-                <span style="color: cornflowerblue">Laravel Y SQLServer.</span>
+                <span style="color: cornflowerblue"
+                  >Laravel, Livewire, MySQL y SQLServer.</span
+                >
               </p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
             </div>
+            <!---Experiencia 3-->
+            <div class="item der">
+              <h4>Backend Developer</h4>
+              <span class="casa">Markdebrand, LLC</span>
+              <p>
+                Desarrollo en proyectos empresariales para la gestion y comercio
+                de recursos y gasolina. Desarrollados con tecnologias como
+                <span style="color: cornflowerblue"
+                  >Nodejs, Expressjs, MongoDB, Laravel, PosgresSQL,
+                  MongoDb.</span
+                >
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <!---fin de experiencias-->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-      <div class="contenido-seccion">
-        <h2>Skills</h2>
-        <div class="fila">
-          <!-- Technical Skill -->
-          <div class="col">
-            <h3>Habilidades Tecnicas</h3>
-            <div class="skill">
-              <span>Laravel</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>75%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>PWA</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>MVC</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Testing</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Professional Skills -->
-          <div class="col">
-            <h3>Habilidades Blandas</h3>
-            <div class="skill">
-              <span>Comunicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>90%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Resolucion de Poroblemas</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Dedicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>100%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- SECCION SKILLS  Eliminada en esta version Buscar antes del commit del 16-08-2025-->
 
     <!-- SECCION CONTACTO 
     <section id="contacto" class="contacto">
@@ -465,13 +466,18 @@
         <i class="fa-solid fa-angles-up"></i>
       </a>
       <div class="redes">
+        <a href="https://github.com/Daheid" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
         <a
           href="https://www.linkedin.com/in/nelson-carrero-96b984202/"
           target="_blank"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
-        <a href="https://github.com/Daheid" target="_blank"
-          ><i class="fa-brands fa-github"></i
+        <a
+          href="https://api.whatsapp.com/send?phone=584125256068"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
         ></a>
       </div>
     </footer>
