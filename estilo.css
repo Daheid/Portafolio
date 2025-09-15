@@ -810,21 +810,30 @@ footer .arriba {
   cursor: pointer;
   transition: transform 0.3s ease;
   margin-top: 20px;
-  display: none;
+  display: block; /* Cambiado de none a block para visualización */
+  height: 480px; /* Altura fija para consistencia */
 }
 
 .proyecto-card:hover {
   transform: translateY(-5px);
 }
 
+.image-container {
+  height: 180px;
+  overflow: hidden;
+}
+
 .project-image {
   width: 100%;
-  height: 180px;
+  height: 100%;
   object-fit: cover;
 }
 
 .project-content {
   padding: 20px;
+  height: calc(100% - 180px); /* Restamos la altura de la imagen */
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
@@ -845,6 +854,7 @@ footer .arriba {
   line-height: 1.5;
   margin-bottom: 20px;
   color: #e0e0e0;
+  flex-grow: 1; /* Esto hace que la descripción ocupe el espacio disponible */
 }
 
 .tech-tags {
@@ -856,16 +866,16 @@ footer .arriba {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
+  margin-top: auto; /* Esto empuja los botones hacia abajo */
 }
 
 .action-btn {
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  border: none;
 }
 
 .demo-btn {
@@ -885,28 +895,4 @@ footer .arriba {
 
 .docs-btn:hover {
   background-color: rgba(77, 171, 247, 0.1);
-}
-
-.proyecto-card.mostrar {
-  display: block;
-  /* O usa flex/grid según tu layout */
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#verMasBtn {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-}
-
-#verMasBtn:hover {
-  background-color: #45a049;
 }

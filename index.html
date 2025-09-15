@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Nelson Carrero - Portafolio</title>
     <link rel="stylesheet" href="estilo.css" />
-    <link rel="stylesheet" href="vermas.css" />
+    <link rel="stylesheet" href="proyectos.css" />
     <link rel="stylesheet" href="modal.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
@@ -109,12 +109,12 @@
                 <span>ExpressJs</span>
               </div>
               <div class="interes">
-                <i class="fa-brands fa-node"></i>
-                <span>NodeJs</span>
+                <i class="fa-brands fa-java"></i>
+                <span>SpringBoot</span>
               </div>
               <div class="interes">
-                <i class="fa-brands fa-python"></i>
-                <span>DJango</span>
+                <i class="fa fa-folder"></i>
+                <span>Postman</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-gear"></i>
@@ -148,9 +148,18 @@
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
         <h2>Proyectos</h2>
+
+        <!-- Pestañas para filtrar proyectos -->
+        <div class="portfolio-tabs">
+          <button class="tab-btn active" data-category="all">Todos</button>
+          <button class="tab-btn" data-category="Laravel">Laravel</button>
+          <button class="tab-btn" data-category="ExpressJS">ExpressJS</button>
+          <button class="tab-btn" data-category="SpringBoot">SpringBoot</button>
+        </div>
+
         <div class="galeria">
-          <!---Proyecto 1-->
-          <div class="proyecto-card" id="openModalBtn2">
+          <!-- Proyecto 1 - FuelPriceApi -->
+          <div class="proyecto-card" data-category="Laravel">
             <div class="image-container">
               <img
                 src="img/fuelpricesapi.png"
@@ -163,8 +172,7 @@
               <p class="project-subtitle">API - Rest</p>
               <p class="project-description">
                 Obtiene los precios de la gasolina del Gobierno de EU y los
-                procesa para que sean más fáciles de usar.
-                <span class="tech-tags">Laravel, PostgreSQL y Scribe.</span>
+                procesa para que sean más fáciles de usar y filtrarlos.
               </p>
               <div class="project-actions">
                 <button
@@ -182,22 +190,22 @@
               </div>
             </div>
           </div>
-          <!---Proyecto 2-->
-          <div class="proyecto-card" id="openModalBtn2">
+
+          <!-- Proyecto 2 - API -->
+          <div class="proyecto-card" data-category="api">
             <div class="image-container">
               <img
-                src="img/aaaa.png"
+                src="img/enDesarrollo.png"
                 alt="APIREST - Gestor de inventario"
                 class="project-image"
               />
             </div>
             <div class="project-content">
-              <h3 class="project-title">Multi Logins (En desarrollo)</h3>
+              <h3 class="project-title">Gestor de Tareas (En desarrollo)</h3>
               <p class="project-subtitle">API - Rest</p>
               <p class="project-description">
-                Uso de servicios de autenticación con servicios externos como
-                linkedin, google, microsoft y JWT.
-                <span class="tech-tags">Laravel, MySQL y Scribe.</span>
+                Gestor de Tareas Para ser compartidas via Link o Email.
+                <span class="tech-tags"></span>
               </p>
               <div class="project-actions">
                 <button class="action-btn demo-btn">Demo</button>
@@ -205,11 +213,12 @@
               </div>
             </div>
           </div>
-          <!--  Proyecto 3 -->
-          <div class="proyecto-card" id="openModalBtn2">
+
+          <!-- Proyecto  - Web -->
+          <div class="proyecto-card" data-category="web">
             <div class="image-container">
               <img
-                src="img/aaaa.png"
+                src="img/enDesarrollo.png"
                 alt="APIREST - Gestor de inventario"
                 class="project-image"
               />
@@ -220,9 +229,6 @@
               <p class="project-description">
                 Aplicacion para la gestion de finanzas personales,
                 empresariales, listas de compras y mas con usuarios Alfa en uso.
-                <span class="tech-tags"
-                  >laravel, Livewire, PWA, Tailwind CSS, indexeDB</span
-                >
               </p>
               <div class="project-actions">
                 <button class="action-btn demo-btn">Demo</button>
@@ -231,11 +237,11 @@
             </div>
           </div>
 
-          <!-- proyecto 4 -->
-          <div class="proyecto-card" id="openModalBtn2">
+          <!-- Proyecto  - API -->
+          <div class="proyecto-card" data-category="api">
             <div class="image-container">
               <img
-                src="img/aaaa.png"
+                src="img/enDesarrollo.png"
                 alt="APIREST - Gestor de inventario"
                 class="project-image"
               />
@@ -256,11 +262,11 @@
             </div>
           </div>
 
-          <!-- proyecto 6 -->
-          <div class="proyecto-card" id="openModalBtn2">
+          <!-- Proyecto  - Infraestructura -->
+          <div class="proyecto-card" data-category="infra">
             <div class="image-container">
               <img
-                src="img/aaaa.png"
+                src="img/enDesarrollo.png"
                 alt="APIREST - Gestor de inventario"
                 class="project-image"
               />
@@ -280,21 +286,21 @@
             </div>
           </div>
 
-          <!-- proyecto 5 -->
-          <div class="proyecto-card" id="openModalBtn2">
+          <!-- Proyecto 6 - API -->
+          <div class="proyecto-card" data-category="api">
             <div class="image-container">
               <img
-                src="img/aaaa.png"
+                src="img/enDesarrollo.png"
                 alt="APIREST - Gestor de inventario"
                 class="project-image"
               />
             </div>
             <div class="project-content">
-              <h3 class="project-title">Gestor de Tareas (En desarrollo)</h3>
+              <h3 class="project-title">Multi Logins</h3>
               <p class="project-subtitle">API - Rest</p>
               <p class="project-description">
-                Gestor de Tareas Para ser compartidas via Link o Email.
-                <span class="tech-tags"></span>
+                Uso de servicios de autenticación con servicios externos como
+                linkedin, google, microsoft y JWT.
               </p>
               <div class="project-actions">
                 <button class="action-btn demo-btn">Demo</button>
@@ -305,7 +311,6 @@
 
           <!-- Fin de los Proyecto  -->
         </div>
-        <button id="verMasBtn">Ver más</button>
       </div>
     </section>
 
@@ -602,7 +607,7 @@
 
     <!----SCRIPTS-->
     <script src="script.js"></script>
-    <script src="vermas.js"></script>
+    <script src="proyectos.js"></script>
     <script src="modal.js"></script>
     <script src="correo.js"></script>
   </body>
