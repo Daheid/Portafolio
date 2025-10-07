@@ -30,8 +30,12 @@
             <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
             <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
             <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+
             <li>
               <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li>
+              <a href="#certificados" onclick="seleccionar()">CERTIFICADOS</a>
             </li>
             <!-- <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li> -->
             <!---<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>--->
@@ -109,12 +113,12 @@
                 <span>ExpressJs</span>
               </div>
               <div class="interes">
-                <i class="fa-brands fa-java"></i>
-                <span>SpringBoot</span>
+                <i class="fa-brands fa-python"></i>
+                <span>Flask</span>
               </div>
               <div class="interes">
-                <i class="fa fa-folder"></i>
-                <span>Postman</span>
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-gear"></i>
@@ -154,11 +158,12 @@
           <button class="tab-btn active" data-category="all">Todos</button>
           <button class="tab-btn" data-category="Laravel">Laravel</button>
           <button class="tab-btn" data-category="ExpressJS">ExpressJS</button>
-          <button class="tab-btn" data-category="SpringBoot">SpringBoot</button>
+          <button class="tab-btn" data-category="Vanilla">Vanilla</button>
+          <button class="tab-btn" data-category="React">React</button>
         </div>
 
         <div class="galeria">
-          <!-- Proyecto 1 - FuelPriceApi -->
+          <!-- Proyecto 1 - FuelPrice Api -->
           <div class="proyecto-card" data-category="Laravel">
             <div class="image-container">
               <img
@@ -169,7 +174,40 @@
             </div>
             <div class="project-content">
               <h3 class="project-title">Filtro de Precios de la gasolina</h3>
-              <p class="project-subtitle">API - Rest</p>
+              <p class="project-subtitle">API - REST</p>
+              <p class="project-description">
+                Obtiene los precios de la gasolina del Gobierno de EU y los
+                procesa para que sean más fáciles de usar y filtrarlos.
+              </p>
+              <div class="project-actions">
+                <button
+                  class="action-btn demo-btn"
+                  onclick="window.open('https://github.com/Daheid/fuelpricesapi', '_blank')"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="action-btn docs-btn"
+                  onclick="window.open('https://fuelpricesapi.nelsoncarrero.dev/docs', '_blank')"
+                >
+                  Documentación
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 - FuelPrice frontend -->
+          <div class="proyecto-card" data-category="Vanilla">
+            <div class="image-container">
+              <img
+                src="img/fuelpricesapi.png"
+                alt="Web - Precios de la gasolina"
+                class="project-image"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Filtro de Precios de la gasolina</h3>
+              <p class="project-subtitle">Web - Vanilla</p>
               <p class="project-description">
                 Obtiene los precios de la gasolina del Gobierno de EU y los
                 procesa para que sean más fáciles de usar y filtrarlos.
@@ -179,13 +217,13 @@
                   class="action-btn demo-btn"
                   onclick="window.open('https://fuelprices.nelsoncarrero.dev/', '_blank')"
                 >
-                  Demo
+                  GitHub
                 </button>
                 <button
                   class="action-btn docs-btn"
                   onclick="window.open('https://fuelpricesapi.nelsoncarrero.dev/docs', '_blank')"
                 >
-                  Documentación
+                  Demo
                 </button>
               </div>
             </div>
@@ -421,6 +459,8 @@
         </div>
       </div>
     </section>
+
+    <!-- SECCION CERTIFICADOS -->
 
     <!-- SECCION SKILLS  Eliminada en esta version Buscar antes del commit del 16-08-2025-->
 
