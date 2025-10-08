@@ -899,28 +899,32 @@ footer .arriba {
 
 /* CERTIFICADOS */
 
-/* SECCION CERTIFICADOS */
+/* CERTIFICADOS - Asegurar que estas clases estén presentes */
 .certificados {
   background-color: #1e2326;
   color: #fff;
   padding: 50px 20px;
 }
+
 .certificados .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
+
 .certificados h2 {
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
+
 .galeria-certificados {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
+
 .certificado-card {
   background-color: #252a2e;
   border-radius: 10px;
@@ -930,9 +934,11 @@ footer .arriba {
   transition: transform 0.3s ease;
   border: 1px solid #2c69eb;
 }
+
 .certificado-card:hover {
   transform: translateY(-5px);
 }
+
 .certificado-img {
   height: 200px;
   background: linear-gradient(135deg, #2c69eb, #1e2326);
@@ -942,40 +948,36 @@ footer .arriba {
   position: relative;
   overflow: hidden;
 }
-.certificado-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23252a2e" opacity="0.1"><polygon points="50,10 60,40 90,40 65,60 75,90 50,70 25,90 35,60 10,40 40,40"/></svg>');
-  background-size: 50px;
-}
+
 .certificado-placeholder {
   text-align: center;
   color: white;
   z-index: 2;
 }
+
 .certificado-placeholder i {
   font-size: 60px;
   margin-bottom: 15px;
   display: block;
   color: #ffd700;
 }
+
 .certificado-placeholder span {
   font-size: 24px;
   font-weight: bold;
   font-family: "Righteous";
 }
+
 .certificado-info {
   padding: 20px;
 }
+
 .certificado-info h3 {
   font-size: 22px;
   margin-bottom: 10px;
   color: #2c69eb;
 }
+
 .certificado-info .institucion {
   color: #a0a0a0;
   font-style: italic;
@@ -983,11 +985,13 @@ footer .arriba {
   border-left: 3px solid #2c69eb;
   padding-left: 10px;
 }
+
 .certificado-info .descripcion {
   line-height: 1.5;
   margin-bottom: 15px;
   color: #e0e0e0;
 }
+
 .ver-certificado {
   display: inline-block;
   background-color: #2c69eb;
@@ -999,6 +1003,7 @@ footer .arriba {
   transition: all 0.3s;
   border: 1px solid #2c69eb;
 }
+
 .ver-certificado:hover {
   background-color: transparent;
   color: #2c69eb;
